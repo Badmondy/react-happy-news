@@ -1,0 +1,32 @@
+.navbar{
+    display:flex;
+    gap:1rem;
+    left:0;
+    right:0;
+    top:0;
+    position: sticky;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:12px;
+    background-color: white;
+}
+
+.navbar li{
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.li-link{
+    text-decoration: none;
+    color:black;
+
+}
+
+
+.li-link-admin{
+    text-decoration: none;
+    color:blue;
+}
+

@@ -1,17 +1,33 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './site.css';
+import './assets/css/navbar.css'
+import './assets/css/news.css'
+import Ads from './data/Ads.json'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import AdsDisplay from './components/ads/AdsDisplay';
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+
+
+    <>
+        <App />
+
+
+        <AdsDisplay adsLink={Ads} classPrefix='ads-mobile' />
+        <AdsDisplay adsLink={Ads} classPrefix='ads-mobile-right' />
+        <AdsDisplay adsLink={Ads} classPrefix='ads-mobile-bottom' />
+
+
+
+
+    </>
+
+)
+
+
